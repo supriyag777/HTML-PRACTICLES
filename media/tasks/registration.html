@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration</title>
+</head>
+<body>
+    <h1>Student Registration Form</h1>
+    <p>Please complete all required fields and submit the form.</p>
+
+    <form action="#" method="post" enctype="multipart/form-data">
+        <fieldset>
+            <legend>Student Details</legend>
+
+            <label for="studentId">Student ID:</label><br>
+            <input type="text" id="studentId" name="studentId" required><br><br>
+
+            <label for="firstName">First Name:</label><br>
+            <input type="text" id="firstName" name="firstName" required><br><br>
+
+            <label for="lastName">Last Name:</label><br>
+            <input type="text" id="lastName" name="lastName" required><br><br>
+
+            <label for="dob">Date of Birth:</label><br>
+            <input type="date" id="dob" name="dob" required><br><br>
+
+            <label>Gender:</label><br>
+            <input type="radio" id="genderMale" name="gender" value="male" required>
+            <label for="genderMale">Male</label>
+            <input type="radio" id="genderFemale" name="gender" value="female">
+            <label for="genderFemale">Female</label>
+            <input type="radio" id="genderOther" name="gender" value="other">
+            <label for="genderOther">Other</label><br><br>
+
+            <label for="grade">Class / Grade:</label><br>
+            <select id="grade" name="grade" required>
+                <option value="">--Select--</option>
+                <option>Nursery</option>
+                <option>KG</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+                <option>11</option>
+                <option>12</option>
+            </select><br><br>
+
+            <label for="section">Section:</label><br>
+            <input type="text" id="section" name="section" placeholder="A, B, etc."><br><br>
+
+            <label for="roll">Roll Number:</label><br>
+            <input type="number" id="roll" name="roll" min="1"><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Contact Information</legend>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="phone">Phone:</label><br>
+            <input type="tel" id="phone" name="phone" placeholder="+1234567890" required><br><br>
+
+            <label for="address">Home Address:</label><br>
+            <textarea id="address" name="address" rows="3" cols="40"></textarea><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Parent / Guardian</legend>
+
+            <label for="guardianName">Guardian Name:</label><br>
+            <input type="text" id="guardianName" name="guardianName" required><br><br>
+
+            <label for="guardianPhone">Guardian Phone:</label><br>
+            <input type="tel" id="guardianPhone" name="guardianPhone" required><br><br>
+
+            <label for="guardianRelation">Relation:</label><br>
+            <input type="text" id="guardianRelation" name="guardianRelation" placeholder="e.g. Mother, Father"><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Academic & Other Details</legend>
+
+            <label>Subjects / Interests:</label><br>
+            <input type="checkbox" id="math" name="subjects" value="Math">
+            <label for="math">Math</label>
+            <input type="checkbox" id="science" name="subjects" value="Science">
+            <label for="science">Science</label>
+            <input type="checkbox" id="english" name="subjects" value="English">
+            <label for="english">English</label>
+            <input type="checkbox" id="arts" name="subjects" value="Arts">
+            <label for="arts">Arts</label><br><br>
+
+            <label for="prevSchool">Previous School (if any):</label><br>
+            <input type="text" id="prevSchool" name="prevSchool"><br><br>
+
+            <label for="admissionDate">Admission Date:</label><br>
+            <input type="date" id="admissionDate" name="admissionDate"><br><br>
+
+            <label for="photo">Student Photo:</label><br>
+            <input type="file" id="photo" name="photo" accept="image/*"><br><br>
+        </fieldset>
+
+        <input type="submit" value="Register Student">
+        <input type="reset" value="Reset Form">
+    </form>
+</body>
+</html>
